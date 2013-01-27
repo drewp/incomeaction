@@ -22,7 +22,7 @@ def contact():
         name = bottle.request.forms.name
         msg = message(bottle.request.forms)
 
-        simplemail.Simplemail().send(recipient=['drewp@bigasterisk.com'],
+        simplemail.Simplemail().send(recipient=['contact@incomeaction.org'],
                                      sender='web form <contact@incomeaction.org>',
                                      subject="incomeaction web form submission from %r" % name,
                                      body=msg)
