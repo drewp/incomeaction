@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <title>Income Equality Action</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <!-- Le styles -->
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
@@ -19,18 +16,14 @@
       }
     </style>
     <link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="lib/bootstrap/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="lib/bootstrap/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="lib/bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="lib/bootstrap/ico/favicon.png">
+    <link rel="shortcut icon" href="img/logo-rounded.png">
   </head>
 
   <body>
@@ -43,12 +36,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><img src="img/logo-32.png"> Income Equality Action</a>
+          <a class="brand" href="#"><img src="img/logo-rounded-32.png"> Income Equality Action</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               <a href="https://twitter.com/incomeaction" class="twitter-follow-button" data-show-count="false">Follow @incomeaction</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </p>
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -120,20 +112,35 @@
             </div><!--/span-->
           </div><!--/row-->
           <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
+            <div class="span12">
+              <a  name="contact"></a><h2>Contact Us</h2>
+              <p>Email: <a href="mailto:contact@incomeaction.org">contact@incomeaction.org</a></p>
+              <p>Or if you prefer, fill out this form:</p>
+              <form action="contact" method="POST">
+
+                <div>
+                  <label for="entry_0">Name </label>
+                  <input type="text" name="name" id="entry_0">
+                </div>
+
+                <div>
+                  <label for="entry_1">Email </label>
+                  <input type="text" name="email" id="entry_1">
+                </div>
+
+                <div>
+                  <label for="entry_2">Telephone </label>
+                  <input type="text" name="telephone" id="entry_2">
+                </div>
+
+                <div>
+                  <label for="entry_4">Message </label>
+                  <textarea name="message" rows="8" cols="75" id="entry_4"></textarea>
+                </div>
+
+                <button type="submit">Send message</button>
+              </form>
+                                                         
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
