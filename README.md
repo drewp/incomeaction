@@ -16,16 +16,21 @@ It is also the root of a python virtualenv.
 
 web
 ---
-/etc/apache2/httpd.conf has documentroot in /var/www/ia/www, which is
-inside the git checkout
+/etc/apache2/httpd.conf proxies to port 9002, which is served by
+nginx. nginx serves most paths as files under /var/www/ia/www, which
+is inside the git checkout. Some request paths are proxied to other
+services
 
 virtualenv
 ----------
-The file ./pydeps is a manifest list for [virtualenv](http://www.virtualenv.org/en/latest/). To build the virtualenv for the first time:
+The file ./pydeps is a manifest list for
+[virtualenv](http://www.virtualenv.org/en/latest/). To build the
+virtualenv for the first time:
 
     % virtualenv .
 
-To update its contents to what pydeps says, which must be done if pydeps changed:
+To update its contents to what pydeps says, which must be done if
+pydeps changed:
 
     % bin/pip install --requirement ./pydeps
 
