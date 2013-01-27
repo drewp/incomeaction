@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd `dirname $0`
+mkdir -p /tmp/incomeaction_nginx
+exec nginx -c `pwd`/nginx.conf
